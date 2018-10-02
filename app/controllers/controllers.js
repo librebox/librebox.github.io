@@ -85,7 +85,8 @@ app.controller('NewController', ['$scope', '$location', 'Storage', function($sco
 .controller('MainController', ['$scope', '$location', '$http', 'Storage', 'SweetAlert', function($scope, $location, $http, Storage, SweetAlert) {
     var protos = {
       "PtCJ7pwoxe8JasnHY8YonnLYjcVHmhiARPJvqcC6VfHT5s8k8sY" : "Betanet",
-      "PsYLVpVvgbLhAhoqAkMFUo6gudkJ9weNXhUYCiLDzcUpFpkk8Wt" : "Betanet_v2"
+      // "PsYLVpVvgbLhAhoqAkMFUo6gudkJ9weNXhUYCiLDzcUpFpkk8Wt" : "Betanet_v2"
+      "PsYLVpVvgbLhAhoqAkMFUo6gudkJ9weNXhUYCiLDzcUpFpkk8Wt" : "Mainnet"
     }
     var ss = Storage.loadStore();
     if (!ss || !ss.ensk || typeof Storage.keys.sk == 'undefined'){
@@ -510,7 +511,7 @@ app.controller('NewController', ['$scope', '$location', 'Storage', function($sco
       
       SweetAlert.swal({
         title: "Are you sure?",
-        text: "You are about to clear you LibreBox - note, unless you've backed up your seed words or private key you'll no longer have access to your accounts",
+        text: "You are about to clear your LibreBox - note, unless you've backed up your seed words or private key you'll no longer have access to your accounts",
         type : "warning",
         showCancelButton: true,
         confirmButtonText: "Yes, clear it!",
