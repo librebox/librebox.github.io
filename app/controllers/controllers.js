@@ -149,7 +149,7 @@ app.controller('NewController', ['$scope', '$location', 'Storage', function($sco
     $scope.tt = $scope.accounts[$scope.account].title;
     
     $scope.amount = 0;
-    $scope.fee = 0;
+    $scope.fee = 30000;
     $scope.parameters = '';
     $scope.delegateType = '';
     $scope.dd = '';
@@ -510,7 +510,7 @@ app.controller('NewController', ['$scope', '$location', 'Storage', function($sco
     };
      $scope.clear = function(){
       $scope.amount = 0;
-      $scope.fee = 0;
+      $scope.fee = 30000;
       $scope.toaddress = '';
       $scope.parameters = '';
     }
