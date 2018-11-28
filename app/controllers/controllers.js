@@ -297,7 +297,7 @@ app.controller('NewController', ['$scope', '$location', 'Storage', function($sco
               pkh : $scope.accounts[$scope.account].address,
             };
           }
-          var op = window.eztz.rpc.account(keys, 0, true, true, null, 30000, 10100, 277)
+          var op = window.eztz.rpc.account(keys, 0, true, true, null, 30000, 10100)
           
           if ($scope.type == "ledger"){
             var cancelled = false;
