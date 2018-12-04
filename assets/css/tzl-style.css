@@ -7,7 +7,6 @@ body {
 
 #area {
   background-color: #1F260B;
-  overflow: auto;
 }
 
 .logoBig {
@@ -82,6 +81,15 @@ a.btn-link {
   background-color: #89BF00 !important;
   border-color: #89BF00 !important;
   color: #FFFFFF !important;
+}
+
+.swal-button {
+  background: #ABE617 !important;
+  color: #1F260B !important;
+}
+
+.swal-button:hover {
+  background-color: #89BF00 !important;
 }
 
 #area div.mainHeaderBox {
@@ -163,4 +171,51 @@ a.btn-link {
   border: 1px solid #ABE617;
   border-bottom-color: #ABE617;
   opacity: 1;
+}
+.transactions {
+  overflow-y: scroll;
+  height: 400px;
+}
+.mainTabs .tab-pane#transactions {
+  overflow: auto;
+}
+.btn-delegate {
+  display: inline-block;
+  padding: 0 1em;
+}
+.btn-disabled {
+  background: #eee!important;
+  color: #ccc!important;
+  border-color: #ccc!important;
+  cursor: not-allowed!important;;
+  pointer-events: none!important;;
+}
+.hide {
+  display: none;
+}
+.passphrase {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.5em;
+  padding: 1em;
+}
+.seed-words {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.form-group label {
+  width: 100%;
+  text-align: left;
+}
+
+.buttons-in-column {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.buttons-in-column > * {
+  max-width: 200px;
 }

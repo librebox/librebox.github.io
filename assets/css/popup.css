@@ -288,6 +288,13 @@ h1{
   margin:0;
   list-style: none;
 }
+.sidebar li:first-child a {
+    color: #fff;
+    background: #1F260C;
+}
+.sidebar li:first-child a .ng-binding {
+    color: #eee;
+}
 .sidebar li {
   margin:0;
   border-bottom: 1px solid #B9013B;
