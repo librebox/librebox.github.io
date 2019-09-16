@@ -233,7 +233,7 @@ a.btn-link {
 }
 .balances {
   display: flex;
-  width: 380px;
+  width: 100%;
   justify-content: space-between;
 }
 .btn-and-tip {
@@ -250,7 +250,7 @@ a.btn-link {
   background: green!important;
 }
 .mainArea .alert {
-  margin-top: 3em;  
+  margin-top: 3em;
 }
 .btn_tzlibre_delegate,
 .btn_tzlibre_delegate:visited {
